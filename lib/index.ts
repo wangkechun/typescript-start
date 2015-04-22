@@ -19,10 +19,10 @@ var DotDDotTsFiles: string[] = [];
 function copyFile(filename: string) {
   var from = path.join(definitelyTypedPath, filename);
   var to = path.join(nowPath, 'typings', filename);
-  console.log(`from ${from} to ${to}`);
+  // console.log(`from ${from} to ${to}`);
   var files = fsf.in(from).findFiles();
   DotDDotTsFiles = DotDDotTsFiles.concat(files);
-  console.log(path.resolve(definitelyTypedPath));
+  // console.log(path.resolve(definitelyTypedPath));
   fse.copy(from, to, (err) => {
     if (err) {
       console.log(err);
@@ -50,7 +50,6 @@ run(devDependencies);
 run(['node']);
 
 console.log('------------------');
-console.log(DotDDotTsFiles);
 DotDDotTsFiles = _(DotDDotTsFiles).chain().map((it) => it.slice(it.indexOf('DefinitelyTyped/') + 'DefinitelyTyped/'.length)).filter((it) => {
   var l = it.split('/');
   return l.length == 2 && l[0] + '.d.ts' == l[1];
