@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs", 
+        "outDir": "built/", 
+        "sourceMap": true, 
+        "target": "es5",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "noLib": false
+    }, 
+    "files": [
+        "lib/index.ts"
+    ]
+}
