@@ -1,22 +1,29 @@
 {
-  "name": "typescript-start",
-  "version": "0.0.0",
-  "description": "quickly install TypeScript definition files from package.json",
-  "main": "built/index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "typescript"
-  ],
-  "author": "wangkechu hi@hi-hi.cn",
-  "license": "ISC",
-  "dependencies": {
-    "copy-dir": "0.0.7",
-    "dir-mapper": "^1.0.0",
-    "fs-extra": "^0.18.2",
-    "fs-finder": "^1.8.0",
-    "jsonfile": "^2.0.0",
-    "lodash": "^3.7.0"
-  }
+    "name": "typescript-start",
+    "version": "0.0.0",
+    "description": "A tool to download typescript type definition via read package.json",
+    "main": "built/index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "typescript"
+    ],
+    "bin": {
+        "typescript-start": "bin/cmd.js"
+    },
+    "author": "wangkechu hi@hi-hi.cn",
+    "license": "MIT",
+    "repository": "github.com/wangkechun/typescript-start",
+    "dependencies": {
+        "dir-mapper": "^1.0.0",
+        "fs-extra": "^0.18.2",
+        "fs-finder": "^1.8.0",
+        "lodash": "^3.7.0"
+    },
+    "files": [
+        "bin/",
+        "DefinitelyTyped/",
+        "built/*.js"
+    ]
 }
