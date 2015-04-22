@@ -16,7 +16,6 @@
     "license": "MIT",
     "repository": "github.com/wangkechun/typescript-start",
     "dependencies": {
-        "dir-mapper": "^1.0.0",
         "fs-extra": "^0.18.2",
         "fs-finder": "^1.8.0",
         "lodash": "^3.7.0"
