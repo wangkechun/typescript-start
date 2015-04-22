@@ -15,6 +15,7 @@
     "copy-dir": "0.0.7",
     "dir-mapper": "^1.0.0",
     "fs-extra": "^0.18.2",
+    "fs-finder": "^1.8.0",
     "jsonfile": "^2.0.0",
     "lodash": "^3.7.0"
   }
