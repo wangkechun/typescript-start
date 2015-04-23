@@ -14,7 +14,7 @@
     },
     "author": "wangkechu hi@hi-hi.cn",
     "license": "MIT",
-    "repository": "github.com/wangkechun/typescript-start",
+    "repository": "wangkechun/typescript-start",
     "dependencies": {
         "fs-extra": "^0.18.2",
         "fs-finder": "^1.8.0",
